@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        width: 99%;
+        height: 70px;
+    }
+     .container{
+        height: 70px;
+        background-color: aqua;
+        color: white;
+        display: flex;
+     }
+     .h1:hover{
+        background-color: azure;
+        color: black;
+     }
+      .home:hover{
+        background-color: azure;
+        color: black;
+     }
+      .services:hover{
+        background-color: azure;
+        color: black;
+     }
+      .product:hover{
+        background-color: azure;
+        color: black;
+     }
+      .about:hover{
+        background-color: azure;
+        color: black;
+     }
+    
+     .div{
+        height: 70px;
+        width: 59%;
+       display: flex;
+        border: 1px solid aqua;
+        padding-right: 2px;
+        margin-left: px;
+        justify-content: center;
+        align-items: center;
+     }
+     .h1 {
+        border: 1px solid aqua;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+     }
+     
+    @media (max-width:600px) {
+        .h1{
+            height: 70px;
+            width: 40%;
+            display: block;
+            align-items: center;
+        }
+
+        .home,
+        .services,
+        .product,
+        .about {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 class="h1 ">Program Park</h1>
+        <div class="home div">Home</div>
+        <div class="services div">Services</div>
+        <div class="product div">Products</div>
+        <div class="about div">About</div>
+    </div>
+</body>
+
+</html>
