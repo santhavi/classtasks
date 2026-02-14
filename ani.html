@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:flex-start;
+    height:600px;
+}
+
+/* 1st and 3rd ball → down then up */
+.ball, .ball2{
+    width:100px;
+    height:100px;
+    background-color:blue;
+    border-radius:50%;
+    animation: moveDown 2s linear infinite alternate;
+}
+
+/* 2nd and 4th ball → up then down */
+.ball1, .ball3{
+    width:100px;
+    height:100px;
+    background-color:red;
+    border-radius:50%;
+    animation: moveUp 2s linear infinite alternate;
+}
+
+/* Down animation */
+@keyframes moveDown{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(500px);
+    }
+}
+
+/* Up animation */
+@keyframes moveUp{
+    from{
+        transform:translateY(500px);
+    }
+    to{
+        transform:translateY(0);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="ball"></div>
+<div class="ball1"></div>
+<div class="ball2"></div>
+<div class="ball3"></div>
+
+</body>
+</html>
